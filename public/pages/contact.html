@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | PharmaLink</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header class="sticky">
+        <a href="/pages/home.html" class="logo"><img src="/assets/images/logo.png" alt="PharmaLink logo"></a>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="delivery.html">Delivery</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div class="icon">
+            <a href="search.html"><i class='bx bx-search'></i></a>
+            <a href="/src/user/profile.php"><i class='bx bx-user'></i></a>
+            <a href="/src/auth/logout.php"><i class='bx bx-log-out'></i></a>
+            <div class="bx bx-menu" id="icon"></div>
+        </div>
+    </header>
+    <br><br><br><br>
+
+    <div class="rp">
+        <div class="piri">
+            <h2>LET'S GET IN TOUCH — WE'RE HERE TO HELP</h2>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="../assets/images/contact-illustration.png" alt="Contact PharmaLink" height="400px" width="auto">
+            </div>
+            <div class="column">
+                <form action="/src/contact/submit.php" method="POST">
+                    <input type="text" name="name" id="name" placeholder="ENTER YOUR NAME" required>
+                    <input type="email" name="email" id="email" placeholder="ENTER YOUR EMAIL ADDRESS" required>
+                    <input type="text" name="topic" id="topic" placeholder="ENTER YOUR TOPIC" required>
+                    <textarea name="msg" id="msg" placeholder="LEAVE US A MESSAGE" cols="30" rows="10" required></textarea>
+                    <button id="btn" type="submit"> SUBMIT </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+
+    <footer>
+        <div class="contact">
+            <div class="container">
+                <div class="first-info">
+                    <img src="/assets/images/logo.png" alt="PharmaLink">
+                    <p>Kanthrmadam Road, Jaffna <br> NP Sri Lanka</p>
+                    <p>(077)3529674</p>
+                    <p>pharmalink@gmail.com</p>
+                    <div class="so-icon">
+                        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                    <div class="secinfo"><h4>Support</h4><p>Contact Us</p><p>About Page</p><p>Information</p><p>Buy &amp; Returns</p><p>Privacy</p></div>
+                    <div class="thinfo"><h4>Shop</h4><p>Kid's Shopping</p><p>Women's Shopping</p><p>Men's Shopping</p><p>Protect Shopping</p><p>Discount</p></div>
+                    <div class="foinfo"><h4>Company</h4><p>About</p><p>Blog</p><p><a href="auth.html">Register</a></p><p><a href="auth.html">Login</a></p></div>
+                    <div class="five"><h4>Subscribe</h4><p>Receive Updates, Hot Deals, Discounts sent straight to your inbox daily</p><p>Always with you. We are here.</p></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="end-text">
+        <p>Copyright &copy; 2024. All Rights Reserved. PharmaLink.</p>
+    </div>
+    <script src="/assets/js/csrf.js"></script>
+    <script src="../assets/js/contact.js"></script>
+</body>
+</html>

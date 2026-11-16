@@ -1,0 +1,25 @@
+# Environment variables (contains sensitive local credentials)
+.env
+
+# Scratch and temporary testing files
+scratch/
+test_cookie.txt
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# Temporary & Log files
+*.log
+*.tmp

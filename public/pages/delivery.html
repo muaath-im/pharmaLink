@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery | PharmaLink</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+    <link rel="stylesheet" href="../assets/css/delivery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header class="sticky">
+        <a href="/pages/home.html" class="logo"><img src="/assets/images/logo.png" alt="PharmaLink logo"></a>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="delivery.html">Delivery</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div class="icon">
+            <a href="search.html"><i class='bx bx-search'></i></a>
+            <a href="/src/user/profile.php"><i class='bx bx-user'></i></a>
+            <a href="/src/auth/logout.php"><i class='bx bx-log-out'></i></a>
+            <div class="bx bx-menu" id="icon"></div>
+        </div>
+    </header>
+    <br><br><br>
+
+    <section>
+        <div class="rp">
+            <form action="/src/delivery/register.php" method="post">
+                <h2>Delivery Registration</h2>
+                <div class="content">
+                    <div class="inputbox">
+                        <label for="name">Enter your name:</label>
+                        <input type="text" placeholder="Full Name" name="name" id="name" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="address">Enter your address:</label>
+                        <input type="text" placeholder="Delivery Address" name="address" id="address" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="mail">Enter your email:</label>
+                        <input type="email" placeholder="pharmalink@gmail.com" name="mail" id="mail" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="telephone">Enter your telephone number:</label>
+                        <input type="tel" placeholder="0770301985" name="telephone" id="telephone" pattern="[0-9]{10}" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="city">Enter your city:</label>
+                        <input type="text" placeholder="City" name="city" id="city" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="postal">Enter your postal code:</label>
+                        <input type="number" placeholder="Postal Code" name="postal" id="postal" required>
+                    </div>
+                    <span class="odr">Order Delivery:</span>
+                    <div class="confirmation">
+                        <label for="yes">YES</label>
+                        <input type="radio" name="YoN" id="yes" value="1" checked>
+                        <label for="no">NO</label>
+                        <input type="radio" name="YoN" id="no" value="0">
+                    </div>
+                </div>
+                <div class="button-of-submit">
+                    <button type="submit">Submit Delivery Details</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact">
+            <div class="container">
+                <div class="first-info">
+                    <img src="/assets/images/logo.png" alt="PharmaLink">
+                    <p>Kanthrmadam Road, Jaffna <br> NP Sri Lanka</p>
+                    <p>(077)3529674</p>
+                    <p>pharmalink@gmail.com</p>
+                    <div class="so-icon">
+                        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                    <div class="secinfo"><h4>Support</h4><p>Contact Us</p><p>About Page</p><p>Information</p><p>Buy &amp; Returns</p><p>Privacy</p></div>
+                    <div class="thinfo"><h4>Shop</h4><p>Kid's Shopping</p><p>Women's Shopping</p><p>Men's Shopping</p><p>Protect Shopping</p><p>Discount</p></div>
+                    <div class="foinfo"><h4>Company</h4><p>About</p><p>Blog</p><p><a href="auth.html">Register</a></p><p><a href="auth.html">Login</a></p></div>
+                    <div class="five"><h4>Subscribe</h4><p>Receive Updates, Hot Deals, Discounts sent straight to your inbox daily</p><p>Always with you. We are here.</p></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="end-text">
+        <p>Copyright &copy; 2024. All Rights Reserved. PharmaLink.</p>
+    </div>
+    <script src="/assets/js/csrf.js"></script>
+    <script src="../assets/js/delivery.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | PharmaLink</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+    <link rel="stylesheet" href="../assets/css/auth.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="container forms">
+        <!-- LOGIN FORM -->
+        <div class="form login" id="login">
+            <div class="form-content" id="login">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <img src="../assets/images/logo.png" alt="PharmaLink Logo" style="max-height: 55px; width: auto;">
+                </div>
+                <header>Login</header>
+                <form method="post" action="/src/auth/login.php">
+                    <div class="field input-field">
+                        <input type="email" name="email" id="email" placeholder="Email" class="input">
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" name="password" id="password" placeholder="Password" class="password">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+                    <div class="form-link">
+                        <a href="forgot-password.html" class="forgot-pass">Forgot password?</a>
+                    </div>
+                    <div class="field button-field">
+                        <button><input type="submit" value="Login" name="login"></button>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="media-options">
+                <a href="#" class="field facebook">
+                    <i class='bx bxl-facebook facebook-icon'></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <img src="../assets/images/google-icon.png" alt="Google" class="google-img">
+                    <span>Login with Google</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- SIGNUP FORM -->
+        <div class="form signup" id="signup">
+            <div class="form-content" id="signup">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <img src="../assets/images/logo.png" alt="PharmaLink Logo" style="max-height: 55px; width: auto;">
+                </div>
+                <header>Signup</header>
+                <form method="post" action="/src/auth/register.php">
+                    <div class="field input-field">
+                        <input type="text" name="Uname" id="Uname" placeholder="Username" class="input">
+                    </div>
+                    <div class="field input-field">
+                        <input type="text" name="address" id="address" placeholder="Address" class="input">
+                    </div>
+                    <div class="field input-field">
+                        <input type="number" name="Age" id="Age" placeholder="Age" class="input">
+                    </div>
+                    <div class="field input-field">
+                        <input type="email" name="email" id="email2" placeholder="Email" class="input">
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" name="password" id="password2" placeholder="Password" class="password">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+                    <div class="field button-field">
+                        <button><input type="submit" value="Sign Up" name="Signup"></button>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="media-options">
+                <a href="#" class="field facebook">
+                    <i class='bx bxl-facebook facebook-icon'></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <img src="../assets/images/google-icon.png" alt="Google" class="google-img">
+                    <span>Login with Google</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="/assets/js/csrf.js"></script>
+    <script src="../assets/js/auth.js"></script>
+</body>
+</html>
