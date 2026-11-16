@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 💊 PharmaLink — Online Pharmacy & Delivery Portal
 
 [![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=flat-square&logo=php&logoColor=white)](https://www.php.net/)
@@ -172,3 +173,7 @@ pharmalink/
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+=======
+# pharmaLink
+Online Pharmacy Portal
+>>>>>>> d85e555c5300f85cf2d0450235ff8945a52c53f5
