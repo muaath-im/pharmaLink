@@ -23,3 +23,14 @@ $RECYCLE.BIN/
 # Temporary & Log files
 *.log
 *.tmp
+
+
+# === Storage: ignore runtime data, keep folder placeholders ===
+storage/cache/*
+storage/logs/*
+storage/uploads/prescriptions/*
+
+# Keep the directory structure in Git
+!storage/cache/.gitkeep
+!storage/logs/.gitkeep
+!storage/uploads/prescriptions/.gitkeep
